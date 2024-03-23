@@ -33,5 +33,6 @@
     <item component="ComponentInfo{com.mydaycloud.app.nescol/com.mydaycloud.app.nescol.MainActivity}" drawable="jic_intune"/>
     <item component="ComponentInfo{org.thoughtcrime.securesms/org.thoughtcrime.securesms.RoutingActivity}" drawable="jic_signal"/>
     <item component="ComponentInfo{org.lineageos.eleven/org.lineageos.eleven.ui.activities.HomeActivity}" drawable="jic_music" />
+    <item component="ComponentInfo{org.oxycblt.auxio/org.oxycblt.auxio.MainActivity}" drawable="jic_music"/>
 
 </resources>
