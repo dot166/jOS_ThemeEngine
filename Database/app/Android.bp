@@ -1,0 +1,25 @@
+android_app {
+    name: "ThemeEngine",
+    platform_apis: true,
+    certificate: "platform",
+    system_ext_specific: true,
+
+    resource_dirs: ["src/main/res"],
+
+    srcs: [
+        "src/main/java/**/*.kt",
+        "src/main/java/**/*.java",
+    ],
+
+    manifest: "src/main/AndroidManifest.xml",
+
+    static_libs: [
+        // DO NOT EDIT THIS SECTION MANUALLY
+        "androidx-constraintlayout_constraintlayout",
+        "androidx.preference_preference",
+        "j.SDK",
+        "com.google.android.material_material",
+    ],
+
+    kotlincflags: ["-Xjvm-default=enable"],
+}
