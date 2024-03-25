@@ -21,5 +21,5 @@ android_app {
         "com.google.android.material_material",
     ],
 
-    kotlincflags: ["-Xjvm-default=enable"],
+    kotlincflags: ["-Xjvm-default=all"],
 }
