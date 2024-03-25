@@ -16,12 +16,13 @@
     <item component="ComponentInfo{com.android.settings/.Settings}" drawable="jic_settings" />
     <item component="ComponentInfo{com.android.chrome/com.google.android.apps.chrome.Main}" drawable="jic_chrome" />
     <item component="ComponentInfo{org.chromium.chrome/com.google.android.apps.chrome.Main}" drawable="jic_chrome" />
+    <item component="ComponentInfo{app.vanadium.browser/com.google.android.apps.chrome.Main}" drawable="jic_chrome" />
     <item component="ComponentInfo{com.microsoft.teams/com.microsoft.skype.teams.Launcher}" drawable="jic_teams" />
     <item component="ComponentInfo{com.amazon.mShop.android.shopping/com.amazon.mShop.home.HomeActivity}" drawable="jic_amazon" />
     <item component="ComponentInfo{com.facebook.katana/com.facebook.katana.LoginActivity}" drawable="jic_facebook" />
     <item component="ComponentInfo{com.fitbit.FitbitMobile/com.fitbit.FirstActivity}" drawable="jic_fitbit" />
     <item component="ComponentInfo{com.google.android.keep/com.google.android.keep.activities.BrowseActivity}" drawable="jic_keep" />
-    <item component="ComponentInfo{com.android.email/com.android.email.activity.Welcome}" drawable="jic_mail" /> <!-- k9 mail goes here -->
+    <item component="ComponentInfo{com.fsck.k9/com.fsck.k9.activity.MessageList}" drawable="jic_mail" />
     <item component="ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.home.HomeActivity}" drawable="jic_photos" />
     <item component="ComponentInfo{com.google.android.apps.tasks/com.google.android.apps.tasks.ui.TaskListsActivity}" drawable="jic_tasks" />
     <item component="ComponentInfo{com.azure.authenticator/com.azure.authenticator.ui.LaunchActivity}" drawable="jic_auth" />
