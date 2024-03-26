@@ -1,21 +1,15 @@
 package com.j.icons;
 
-import static jOS.Core.ThemeEngine.getSystemTheme;
-
-import androidx.appcompat.app.AppCompatActivity;
+import jOS.Core.jActivity;
 
 import android.os.Bundle;
 
-import jOS.Core.ActionBar;
 
-
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends jActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        setTheme(getSystemTheme(this));
+        configure(R.string.app_name, R.layout.activity_main, false);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        ActionBar.actionBarConfig(R.string.app_name, jOS.Core.R.drawable.ic_launcher_j, false, this, "");
     }
 }

@@ -18,14 +18,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Objects;
 
-public class MainActivity extends AppCompatActivity {
+import jOS.Core.jActivity;
+
+public class MainActivity extends jActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        setTheme(getSystemTheme(this));
+        configure(R.string.app_name_short, R.layout.activity_main, true, R.mipmap.ic_launcher, "jOS.ThemeEngine.CONFIG");
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        actionBarConfig(R.string.app_name_short, R.mipmap.ic_launcher, true, this, "jOS.ThemeEngine.CONFIG");
     }
 
     @SuppressLint("Range")
