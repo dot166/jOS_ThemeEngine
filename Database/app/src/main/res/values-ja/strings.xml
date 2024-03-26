@@ -6,6 +6,7 @@
     <string name="theme_settings">テーマ設定</string>
     <string name="global_theme_settings">グローバルテーマ設定</string>
     <string name="config_fragment_name" translatable="false">jOS.ThemeEngine.ConfigActivity$jThemeEngineConfigFragment</string>
+    <string name="loadButtonText">データを読み込む</string>
     <string-array name="themes">
         <item>ホロ</item>
         <item>マテリアル・ユー (M3) (ダーク)</item>

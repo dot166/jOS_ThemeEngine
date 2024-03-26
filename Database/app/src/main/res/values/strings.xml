@@ -6,7 +6,6 @@
     <string name="theme_settings">Theme Settings</string>
     <string name="global_theme_settings">Global Theme Settings</string>
     <string name="config_fragment_name" translatable="false">jOS.ThemeEngine.ConfigActivity$jThemeEngineConfigFragment</string>
-    <string name="no_records_found">No Records Found</string>
     <string name="loadButtonText">Load Data</string>
     <string-array name="themes">
         <item>Holo</item>

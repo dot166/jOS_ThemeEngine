@@ -2,7 +2,7 @@ package jOS.ThemeEngine;
 
 import static jOS.Core.ActionBar.actionBarConfig;
 import static jOS.Core.ThemeEngine.currentTheme;
-import static jOS.Core.ThemeEngine.getSystemTheme;
+import static jOS.Core.ThemeEngine.getAllThemes;
 import static jOS.Core.ThemeEngine.getThemeFromDB1;
 
 import android.annotation.SuppressLint;
@@ -33,27 +33,7 @@ public class MainActivity extends jActivity {
         // inserting complete table details in this text field
         TextView resultView= (TextView) findViewById(R.id.res);
 
-        // creating a cursor object of the
-        // content URI
-        Cursor cursor = getContentResolver().query(Uri.parse("content://jOS.Core.ThemeEngine.database/themes"), null, null, null, null);
-
-        if (cursor != null) {
-            // iteration of the cursor
-            // to print whole table
-            if (cursor.moveToFirst()) {
-                StringBuilder strBuild = new StringBuilder();
-                while (!cursor.isAfterLast()) {
-                    Log.i("Theme Engine - Load Data", cursor.getString(cursor.getColumnIndex("id")) + "-" + cursor.getString(cursor.getColumnIndex("name")) + "-" + cursor.getString(cursor.getColumnIndex("current")));
-                    strBuild.append("\n" + cursor.getString(cursor.getColumnIndex("id")) + "-" + cursor.getString(cursor.getColumnIndex("name")) + "-" + cursor.getString(cursor.getColumnIndex("current")));
-                    cursor.moveToNext();
-                }
-                resultView.setText(strBuild);
-            } else {
-                resultView.setText(R.string.no_records_found);
-            }
-        } else {
-            resultView.setText(R.string.no_records_found);
-        }
+        resultView.setText(getAllThemes(this));
     }
 
     @Override
