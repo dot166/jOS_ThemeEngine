@@ -1,20 +1,14 @@
 package jOS.ThemeEngine;
 
-import static jOS.Core.ActionBar.actionBarConfig;
 import static jOS.Core.ThemeEngine.currentTheme;
 import static jOS.Core.ThemeEngine.getAllThemes;
 import static jOS.Core.ThemeEngine.getThemeFromDB1;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.database.Cursor;
-import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Objects;
 
