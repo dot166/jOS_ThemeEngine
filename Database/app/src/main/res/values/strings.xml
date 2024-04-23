@@ -11,10 +11,14 @@
         <item>Holo</item>
         <item>Material You (M3) (Dark)</item>
         <item>Material You (M3) (Light)</item>
+        <item>Androidx AppCompat (Material) (Dark)</item>
+        <item>Androidx AppCompat (Material) (Light)</item>
     </string-array>
     <string-array name="themesConfig" translatable="false">
         <item>Holo</item>
         <item>M3 Dark</item>
         <item>M3 Light</item>
+        <item>AppCompat Dark</item>
+        <item>AppCompat Light</item>
     </string-array>
 </resources>
