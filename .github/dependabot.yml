@@ -4,8 +4,8 @@
 # https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
 version: 2
 updates:
-  - package-ecosystem: "gradle" # See documentation for possible values
-    directory: "/Icons" # Location of package manifests
+  - package-ecosystem: "gradle"
+    directory: "/Icons"
     schedule:
       interval: "daily"
 
