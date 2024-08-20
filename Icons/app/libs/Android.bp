@@ -31,12 +31,12 @@ android_library_import {
     static_libs: [
         "androidx.core_core-ktx",
         "icons_com.mikepenz_aboutlibraries-core",
-        "kotlin-stdlib",
-        "org.jetbrains.compose.foundation_foundation",
-        "org.jetbrains.compose.material3_material3",
-        "org.jetbrains.compose.runtime_runtime",
-        "org.jetbrains.compose.ui_ui",
-        "org.jetbrains.compose.ui_ui-tooling-preview",
+        "icons_org.jetbrains.compose.foundation_foundation",
+        "icons_org.jetbrains.compose.material3_material3",
+        "icons_org.jetbrains.compose.runtime_runtime",
+        "icons_org.jetbrains.compose.ui_ui",
+        "icons_org.jetbrains.compose.ui_ui-tooling-preview",
+        "icons_org.jetbrains.kotlin_kotlin-stdlib",
     ],
 }
 
@@ -53,12 +53,12 @@ android_library {
         "icons_com.mikepenz_aboutlibraries-compose-m3-android-nodeps",
         "androidx.core_core-ktx",
         "icons_com.mikepenz_aboutlibraries-core",
-        "kotlin-stdlib",
-        "org.jetbrains.compose.foundation_foundation",
-        "org.jetbrains.compose.material3_material3",
-        "org.jetbrains.compose.runtime_runtime",
-        "org.jetbrains.compose.ui_ui",
-        "org.jetbrains.compose.ui_ui-tooling-preview",
+        "icons_org.jetbrains.compose.foundation_foundation",
+        "icons_org.jetbrains.compose.material3_material3",
+        "icons_org.jetbrains.compose.runtime_runtime",
+        "icons_org.jetbrains.compose.ui_ui",
+        "icons_org.jetbrains.compose.ui_ui-tooling-preview",
+        "icons_org.jetbrains.kotlin_kotlin-stdlib",
     ],
     java_version: "1.7",
 }
@@ -87,9 +87,9 @@ android_library_import {
         "//apex_available:anyapex",
     ],
     static_libs: [
-        "kotlin-stdlib",
-        "org.jetbrains.kotlinx_kotlinx-collections-immutable",
-        "org.jetbrains.kotlinx_kotlinx-serialization-json",
+        "icons_org.jetbrains.kotlin_kotlin-stdlib",
+        "icons_org.jetbrains.kotlinx_kotlinx-collections-immutable",
+        "icons_org.jetbrains.kotlinx_kotlinx-serialization-json",
     ],
 }
 
@@ -104,9 +104,9 @@ android_library {
     manifest: "com/mikepenz/aboutlibraries-core-android/11.2.2/AndroidManifest.xml",
     static_libs: [
         "icons_com.mikepenz_aboutlibraries-core-android-nodeps",
-        "kotlin-stdlib",
-        "org.jetbrains.kotlinx_kotlinx-collections-immutable",
-        "org.jetbrains.kotlinx_kotlinx-serialization-json",
+        "icons_org.jetbrains.kotlin_kotlin-stdlib",
+        "icons_org.jetbrains.kotlinx_kotlinx-collections-immutable",
+        "icons_org.jetbrains.kotlinx_kotlinx-serialization-json",
     ],
     java_version: "1.7",
 }
@@ -133,7 +133,7 @@ java_library_static {
     static_libs: [
         "icons_com.squareup.okhttp3_okhttp-nodeps",
         "icons_com.squareup.okio_okio",
-        "kotlin-stdlib-jdk8",
+        "icons_org.jetbrains.kotlin_kotlin-stdlib-jdk8",
     ],
     java_version: "1.7",
 }
@@ -173,7 +173,7 @@ java_library_static {
     ],
     static_libs: [
         "icons_com.squareup.okio_okio-jvm-nodeps",
-        "kotlin-stdlib",
+        "icons_org.jetbrains.kotlin_kotlin-stdlib",
     ],
     java_version: "1.7",
 }
@@ -189,7 +189,7 @@ android_library_import {
     ],
     static_libs: [
         "icons_io.coil-kt_coil-base",
-        "kotlin-stdlib",
+        "icons_org.jetbrains.kotlin_kotlin-stdlib",
     ],
 }
 
@@ -205,7 +205,7 @@ android_library {
     static_libs: [
         "icons_io.coil-kt_coil-nodeps",
         "icons_io.coil-kt_coil-base",
-        "kotlin-stdlib",
+        "icons_org.jetbrains.kotlin_kotlin-stdlib",
     ],
     java_version: "1.7",
 }
@@ -229,8 +229,8 @@ android_library_import {
         "androidx.profileinstaller_profileinstaller",
         "icons_com.squareup.okhttp3_okhttp",
         "icons_com.squareup.okio_okio",
-        "kotlin-stdlib",
-        "kotlinx-coroutines-android",
+        "icons_org.jetbrains.kotlin_kotlin-stdlib",
+        "icons_org.jetbrains.kotlinx_kotlinx-coroutines-android",
     ],
 }
 
@@ -254,8 +254,8 @@ android_library {
         "androidx.profileinstaller_profileinstaller",
         "icons_com.squareup.okhttp3_okhttp",
         "icons_com.squareup.okio_okio",
-        "kotlin-stdlib",
-        "kotlinx-coroutines-android",
+        "icons_org.jetbrains.kotlin_kotlin-stdlib",
+        "icons_org.jetbrains.kotlinx_kotlinx-coroutines-android",
     ],
     java_version: "1.7",
 }
@@ -272,7 +272,7 @@ android_library_import {
     static_libs: [
         "icons_io.coil-kt_coil",
         "icons_io.coil-kt_coil-compose-base",
-        "kotlin-stdlib",
+        "icons_org.jetbrains.kotlin_kotlin-stdlib",
     ],
 }
 
@@ -289,7 +289,7 @@ android_library {
         "icons_io.coil-kt_coil-compose-nodeps",
         "icons_io.coil-kt_coil",
         "icons_io.coil-kt_coil-compose-base",
-        "kotlin-stdlib",
+        "icons_org.jetbrains.kotlin_kotlin-stdlib",
     ],
     java_version: "1.7",
 }
@@ -308,7 +308,7 @@ android_library_import {
         "androidx.core_core-ktx",
         "com.google.accompanist_accompanist-drawablepainter",
         "icons_io.coil-kt_coil-base",
-        "kotlin-stdlib",
+        "icons_org.jetbrains.kotlin_kotlin-stdlib",
     ],
 }
 
@@ -327,7 +327,427 @@ android_library {
         "androidx.core_core-ktx",
         "com.google.accompanist_accompanist-drawablepainter",
         "icons_io.coil-kt_coil-base",
-        "kotlin-stdlib",
+        "icons_org.jetbrains.kotlin_kotlin-stdlib",
+    ],
+    java_version: "1.7",
+}
+
+java_import {
+    name: "icons_org.jetbrains_annotations-nodeps",
+    jars: ["org/jetbrains/annotations/23.0.0/annotations-23.0.0.jar"],
+    sdk_version: "34",
+    min_sdk_version: "14",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+}
+
+java_library_static {
+    name: "icons_org.jetbrains_annotations",
+    sdk_version: "34",
+    min_sdk_version: "14",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+    static_libs: [
+        "icons_org.jetbrains_annotations-nodeps",
+    ],
+    java_version: "1.7",
+}
+
+java_library_static {
+    name: "icons_org.jetbrains.compose.foundation_foundation",
+    sdk_version: "34",
+    min_sdk_version: "14",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+    static_libs: [
+        "androidx.compose.foundation_foundation",
+    ],
+    java_version: "1.7",
+}
+
+java_library_static {
+    name: "icons_org.jetbrains.compose.material3_material3",
+    sdk_version: "34",
+    min_sdk_version: "14",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+    static_libs: [
+        "androidx.compose.material3_material3",
+    ],
+    java_version: "1.7",
+}
+
+java_library_static {
+    name: "icons_org.jetbrains.compose.runtime_runtime",
+    sdk_version: "34",
+    min_sdk_version: "14",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+    static_libs: [
+        "androidx.compose.runtime_runtime",
+    ],
+    java_version: "1.7",
+}
+
+java_library_static {
+    name: "icons_org.jetbrains.compose.ui_ui",
+    sdk_version: "34",
+    min_sdk_version: "14",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+    static_libs: [
+        "androidx.compose.ui_ui",
+    ],
+    java_version: "1.7",
+}
+
+java_library_static {
+    name: "icons_org.jetbrains.compose.ui_ui-tooling-preview",
+    sdk_version: "34",
+    min_sdk_version: "14",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+    static_libs: [
+        "androidx.compose.ui_ui-tooling-preview",
+    ],
+    java_version: "1.7",
+}
+
+java_library_static {
+    name: "icons_org.jetbrains.kotlin_kotlin-bom",
+    sdk_version: "34",
+    min_sdk_version: "14",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+    static_libs: [
+    ],
+    java_version: "1.7",
+}
+
+java_import {
+    name: "icons_org.jetbrains.kotlin_kotlin-stdlib-nodeps",
+    jars: ["org/jetbrains/kotlin/kotlin-stdlib/2.0.20-RC2/kotlin-stdlib-2.0.20-RC2.jar"],
+    sdk_version: "34",
+    min_sdk_version: "14",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+}
+
+java_library_static {
+    name: "icons_org.jetbrains.kotlin_kotlin-stdlib",
+    sdk_version: "34",
+    min_sdk_version: "14",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+    static_libs: [
+        "icons_org.jetbrains.kotlin_kotlin-stdlib-nodeps",
+        "icons_org.jetbrains_annotations",
+    ],
+    java_version: "1.7",
+}
+
+java_library_static {
+    name: "icons_org.jetbrains.kotlin_kotlin-stdlib-common",
+    sdk_version: "34",
+    min_sdk_version: "14",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+    static_libs: [
+        "icons_org.jetbrains.kotlin_kotlin-stdlib",
+    ],
+    java_version: "1.7",
+}
+
+java_import {
+    name: "icons_org.jetbrains.kotlin_kotlin-stdlib-jdk7-nodeps",
+    jars: ["org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.8.22/kotlin-stdlib-jdk7-1.8.22.jar"],
+    sdk_version: "34",
+    min_sdk_version: "14",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+}
+
+java_library_static {
+    name: "icons_org.jetbrains.kotlin_kotlin-stdlib-jdk7",
+    sdk_version: "34",
+    min_sdk_version: "14",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+    static_libs: [
+        "icons_org.jetbrains.kotlin_kotlin-stdlib-jdk7-nodeps",
+        "icons_org.jetbrains.kotlin_kotlin-stdlib",
+    ],
+    java_version: "1.7",
+}
+
+java_import {
+    name: "icons_org.jetbrains.kotlin_kotlin-stdlib-jdk8-nodeps",
+    jars: ["org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.8.22/kotlin-stdlib-jdk8-1.8.22.jar"],
+    sdk_version: "34",
+    min_sdk_version: "14",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+}
+
+java_library_static {
+    name: "icons_org.jetbrains.kotlin_kotlin-stdlib-jdk8",
+    sdk_version: "34",
+    min_sdk_version: "14",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+    static_libs: [
+        "icons_org.jetbrains.kotlin_kotlin-stdlib-jdk8-nodeps",
+        "icons_org.jetbrains.kotlin_kotlin-stdlib",
+        "icons_org.jetbrains.kotlin_kotlin-stdlib-jdk7",
+    ],
+    java_version: "1.7",
+}
+
+java_library_static {
+    name: "icons_org.jetbrains.kotlinx_kotlinx-collections-immutable",
+    sdk_version: "34",
+    min_sdk_version: "14",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+    static_libs: [
+        "icons_org.jetbrains.kotlinx_kotlinx-collections-immutable-jvm",
+    ],
+    java_version: "1.7",
+}
+
+java_import {
+    name: "icons_org.jetbrains.kotlinx_kotlinx-collections-immutable-jvm-nodeps",
+    jars: ["org/jetbrains/kotlinx/kotlinx-collections-immutable-jvm/0.3.7/kotlinx-collections-immutable-jvm-0.3.7.jar"],
+    sdk_version: "34",
+    min_sdk_version: "14",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+}
+
+java_library_static {
+    name: "icons_org.jetbrains.kotlinx_kotlinx-collections-immutable-jvm",
+    sdk_version: "34",
+    min_sdk_version: "14",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+    static_libs: [
+        "icons_org.jetbrains.kotlinx_kotlinx-collections-immutable-jvm-nodeps",
+        "icons_org.jetbrains.kotlin_kotlin-stdlib",
+    ],
+    java_version: "1.7",
+}
+
+java_import {
+    name: "icons_org.jetbrains.kotlinx_kotlinx-coroutines-android-nodeps",
+    jars: ["org/jetbrains/kotlinx/kotlinx-coroutines-android/1.8.1/kotlinx-coroutines-android-1.8.1.jar"],
+    sdk_version: "34",
+    min_sdk_version: "14",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+}
+
+java_library_static {
+    name: "icons_org.jetbrains.kotlinx_kotlinx-coroutines-android",
+    sdk_version: "34",
+    min_sdk_version: "14",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+    static_libs: [
+        "icons_org.jetbrains.kotlinx_kotlinx-coroutines-android-nodeps",
+        "icons_org.jetbrains.kotlin_kotlin-stdlib",
+        "icons_org.jetbrains.kotlinx_kotlinx-coroutines-bom",
+        "icons_org.jetbrains.kotlinx_kotlinx-coroutines-core",
+    ],
+    java_version: "1.7",
+}
+
+java_library_static {
+    name: "icons_org.jetbrains.kotlinx_kotlinx-coroutines-bom",
+    sdk_version: "34",
+    min_sdk_version: "14",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+    static_libs: [
+    ],
+    java_version: "1.7",
+}
+
+java_library_static {
+    name: "icons_org.jetbrains.kotlinx_kotlinx-coroutines-core",
+    sdk_version: "34",
+    min_sdk_version: "14",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+    static_libs: [
+        "icons_org.jetbrains.kotlinx_kotlinx-coroutines-core-jvm",
+    ],
+    java_version: "1.7",
+}
+
+java_import {
+    name: "icons_org.jetbrains.kotlinx_kotlinx-coroutines-core-jvm-nodeps",
+    jars: ["org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.8.1/kotlinx-coroutines-core-jvm-1.8.1.jar"],
+    sdk_version: "34",
+    min_sdk_version: "14",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+}
+
+java_library_static {
+    name: "icons_org.jetbrains.kotlinx_kotlinx-coroutines-core-jvm",
+    sdk_version: "34",
+    min_sdk_version: "14",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+    static_libs: [
+        "icons_org.jetbrains.kotlinx_kotlinx-coroutines-core-jvm-nodeps",
+        "icons_org.jetbrains.kotlin_kotlin-stdlib",
+        "icons_org.jetbrains.kotlinx_kotlinx-coroutines-bom",
+        "icons_org.jetbrains_annotations",
+    ],
+    java_version: "1.7",
+}
+
+java_library_static {
+    name: "icons_org.jetbrains.kotlinx_kotlinx-serialization-bom",
+    sdk_version: "34",
+    min_sdk_version: "14",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+    static_libs: [
+    ],
+    java_version: "1.7",
+}
+
+java_library_static {
+    name: "icons_org.jetbrains.kotlinx_kotlinx-serialization-core",
+    sdk_version: "34",
+    min_sdk_version: "14",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+    static_libs: [
+        "icons_org.jetbrains.kotlinx_kotlinx-serialization-core-jvm",
+    ],
+    java_version: "1.7",
+}
+
+java_import {
+    name: "icons_org.jetbrains.kotlinx_kotlinx-serialization-core-jvm-nodeps",
+    jars: ["org/jetbrains/kotlinx/kotlinx-serialization-core-jvm/1.6.3/kotlinx-serialization-core-jvm-1.6.3.jar"],
+    sdk_version: "34",
+    min_sdk_version: "14",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+}
+
+java_library_static {
+    name: "icons_org.jetbrains.kotlinx_kotlinx-serialization-core-jvm",
+    sdk_version: "34",
+    min_sdk_version: "14",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+    static_libs: [
+        "icons_org.jetbrains.kotlinx_kotlinx-serialization-core-jvm-nodeps",
+        "icons_org.jetbrains.kotlin_kotlin-stdlib",
+        "icons_org.jetbrains.kotlinx_kotlinx-serialization-bom",
+    ],
+    java_version: "1.7",
+}
+
+java_library_static {
+    name: "icons_org.jetbrains.kotlinx_kotlinx-serialization-json",
+    sdk_version: "34",
+    min_sdk_version: "14",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+    static_libs: [
+        "icons_org.jetbrains.kotlinx_kotlinx-serialization-json-jvm",
+    ],
+    java_version: "1.7",
+}
+
+java_import {
+    name: "icons_org.jetbrains.kotlinx_kotlinx-serialization-json-jvm-nodeps",
+    jars: ["org/jetbrains/kotlinx/kotlinx-serialization-json-jvm/1.6.3/kotlinx-serialization-json-jvm-1.6.3.jar"],
+    sdk_version: "34",
+    min_sdk_version: "14",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+}
+
+java_library_static {
+    name: "icons_org.jetbrains.kotlinx_kotlinx-serialization-json-jvm",
+    sdk_version: "34",
+    min_sdk_version: "14",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+    static_libs: [
+        "icons_org.jetbrains.kotlinx_kotlinx-serialization-json-jvm-nodeps",
+        "icons_org.jetbrains.kotlin_kotlin-stdlib",
+        "icons_org.jetbrains.kotlinx_kotlinx-serialization-bom",
+        "icons_org.jetbrains.kotlinx_kotlinx-serialization-core",
     ],
     java_version: "1.7",
 }

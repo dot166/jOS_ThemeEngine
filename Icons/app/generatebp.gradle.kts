@@ -22,7 +22,6 @@ configure<GenerateBpPluginExtension> {
         when {
             module.group.startsWith("androidx") -> true
             module.group.startsWith("com.google") -> true
-            module.group.startsWith("org.jetbrains") -> true
             module.group == "io.github.dot166" -> true
             else -> false
         }
