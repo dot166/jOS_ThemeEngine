@@ -9,7 +9,7 @@ public class ConfigActivity extends jConfigActivity {
     }
     public static class jThemeEngineConfigFragment extends LauncherSettingsFragment {
         @Override
-        public boolean isSDKConfig() {
+        public boolean isLIBConfig() {
             return true;
         }
         @Override

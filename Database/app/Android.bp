@@ -17,8 +17,9 @@ android_app {
         // DO NOT EDIT THIS SECTION MANUALLY
         "androidx-constraintlayout_constraintlayout",
         "androidx.preference_preference",
-        "j.SDK",
         "com.google.android.material_material",
+        "androidx.swiperefreshlayout_swiperefreshlayout",
+        "j.Lib",
     ],
 
     kotlincflags: ["-Xjvm-default=all"],
