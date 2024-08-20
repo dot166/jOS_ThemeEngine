@@ -8,7 +8,7 @@ apply {
 
 buildscript {
     repositories {
-        maven("https://raw.githubusercontent.com/lineage-next/gradle-generatebp/v1.7/.m2")
+        maven("https://raw.githubusercontent.com/dot166/gradle-generatebp/main/.m2")
     }
 
     dependencies {
@@ -23,7 +23,7 @@ configure<GenerateBpPluginExtension> {
             module.group.startsWith("androidx") -> true
             module.group.startsWith("com.google") -> true
             module.group.startsWith("org.jetbrains") -> true
-            module.group.startsWith("jOS") -> true
+            module.group == "io.github.dot166" -> true
             else -> false
         }
     }
