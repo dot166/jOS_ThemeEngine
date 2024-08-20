@@ -20,6 +20,10 @@ configure<GenerateBpPluginExtension> {
     targetSdk.set(extra.get("targetSdk") as Int)
     availableInAOSP.set { module: Module ->
         when {
+            module.group == "androidx.databinding" -> false
+            module.name == "preference-ktx" -> false
+            module.group == "com.google.accompanist" -> false
+            module.group.startsWith("androidx.compose") -> false
             module.group.startsWith("androidx") -> true
             module.group.startsWith("com.google") -> true
             module.group == "io.github.dot166" -> true
