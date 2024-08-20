@@ -20,5 +20,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Theme Engine Database"
+rootProject.name = "Theme_Engine_Database"
 include ':app'
