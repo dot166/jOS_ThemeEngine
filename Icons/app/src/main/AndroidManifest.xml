@@ -20,8 +20,6 @@
                 <action android:name="org.adw.launcher.THEMES" />
                 <action android:name="org.adw.launcher.icons.ACTION_PICK_ICON" />
                 <action android:name="com.j.jOSLauncher3.THEME_ICONPACK" />
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
 
                 <category android:name="android.intent.category.DEFAULT" />
         </intent-filter>
