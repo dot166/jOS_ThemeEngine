@@ -49,7 +49,7 @@ public class MainActivity extends jActivity {
                 IconUtils.HideFallback = b;
                 preferences.edit().putBoolean("hideFallback", b).apply();
                 try {
-                    ArrayList<IconUtils.Icon> icons = IconUtils.ParseIconPack(context, BuildConfig.APPLICATION_ID, getResources());
+                    ArrayList<IconUtils.Icon> icons = IconUtils.ParseIconPack(context, "com.j.icons", getResources());
                     icons.add(new IconUtils.Icon("jOS System Component", AppCompatResources.getDrawable(context, jOS.Core.R.drawable.ic_launcher_j), getComponentName(), context));
                     IconsListFragment.iconListRecyclerAdapter.setIcons(icons);
                 } catch (Exception e) {

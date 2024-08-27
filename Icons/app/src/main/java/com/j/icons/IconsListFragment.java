@@ -42,7 +42,7 @@ public class IconsListFragment extends Fragment implements IconSelectListener {
         Resources res = getResources();
 
         try {
-            icons = IconUtils.ParseIconPack(requireContext(), BuildConfig.APPLICATION_ID, res);
+            icons = IconUtils.ParseIconPack(requireContext(), "com.j.icons", res);
         } catch (Exception e) {
             ErrorUtils.handle(e, requireContext());
             icons = new ArrayList<IconUtils.Icon>();
