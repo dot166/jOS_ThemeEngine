@@ -10,7 +10,7 @@
         <item>Holo</item>
         <item>Material You (M3) (Dunkel)</item>
         <item>Materielles Du (M3) (Licht)</item>
-        <item>Androidx AppCompat (Material) (Dunkel)</item>
-        <item>Androidx AppCompat (Material) (Leicht)</item>
+        <item>Material (M2) (Dunkel)</item>
+        <item>Material (M2) (Leicht)</item>
     </string-array>
 </resources>
