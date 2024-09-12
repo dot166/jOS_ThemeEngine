@@ -38,7 +38,7 @@ public class MainActivity extends jActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = this.getMenuInflater();
-        Context context = this;
+        Activity context = this;
         inflater.inflate(R.menu.options, menu);
         IconUtils.HideFallback = preferences.getBoolean("hideFallback", true);
         mSwitchHideFallback = Objects.requireNonNull(menu.findItem(R.id.app_bar_switch).getActionView()).findViewById(R.id.switchAB);
