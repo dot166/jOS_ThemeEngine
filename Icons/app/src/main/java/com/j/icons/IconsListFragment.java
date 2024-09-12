@@ -44,7 +44,7 @@ public class IconsListFragment extends Fragment implements IconSelectListener {
         try {
             icons = IconUtils.ParseIconPack(requireContext(), "com.j.icons", res);
         } catch (Exception e) {
-            ErrorUtils.handle(e, requireContext());
+            ErrorUtils.handle(e, requireActivity());
             icons = new ArrayList<IconUtils.Icon>();
         }
 
