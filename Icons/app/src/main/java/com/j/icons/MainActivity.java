@@ -5,7 +5,7 @@ import jOS.Core.jActivity;
 import jOS.Core.utils.ErrorUtils;
 import jOS.Core.utils.IconUtils;
 
-import android.content.Context;
+import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
