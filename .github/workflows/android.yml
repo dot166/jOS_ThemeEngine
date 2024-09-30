@@ -22,17 +22,7 @@ jobs:
 
     - name: Grant execute permission for gradlew
       run: |
-        cd Database
         chmod +x gradlew
     - name: Build with Gradle
       run: |
-        cd Database
-        ./gradlew build
-    - name: Grant execute permission for gradlew
-      run: |
-        cd Icons
-        chmod +x gradlew
-    - name: Build with Gradle
-      run: |
-        cd Icons
         ./gradlew build

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="jOS.ThemeEngine"
+    android:versionCode="3"
+    android:versionName="2.0" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        tools:replace="android:icon"
+        android:supportsRtl="true">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="jOS.ThemeEngine.icon.CONFIG" />
+                <action android:name="com.fede.launcher.THEME_ICONPACK" />
+                <action android:name="com.anddoes.launcher.THEME" />
+                <action android:name="com.novalauncher.THEME" />
+                <action android:name="com.teslacoilsw.launcher.THEME" />
+                <action android:name="com.gau.go.launcherex.theme" />
+                <action android:name="org.adw.launcher.THEMES" />
+                <action android:name="org.adw.launcher.icons.ACTION_PICK_ICON" />
+                <action android:name="com.j.jOSLauncher3.THEME_ICONPACK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ConfigActivity" android:exported="true" android:label="@string/config_name">
+            <intent-filter>
+                <action android:name="jOS.ThemeEngine.CONFIG" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="jOS.ThemeEngine.database"
+            android:authorities="jOS.Core.ThemeEngine.database"
+            android:enabled="true"
+            android:exported="true"
+            tools:ignore="ExportedContentProvider" />
+    </application>
+
+</manifest>

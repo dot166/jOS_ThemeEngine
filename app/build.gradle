@@ -1,0 +1,32 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'jOS.ThemeEngine'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "jOS.ThemeEngine"
+        minSdk 21
+        targetSdk 35
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation "io.github.dot166:j-Lib:3.2.16"
+}
+
+ext.targetSdk = android.defaultConfig.targetSdk
+apply from: 'generatebp.gradle.kts'

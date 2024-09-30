@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">ThemeEngine-Symbole</string>
-    <string name="app_name_short">jOS-Symbole</string>
-    <string name="fallback_icons">Ausblenden von Fallback-Symbolen</string>
-    <string name="icon_list">Symbolliste</string>
-</resources>

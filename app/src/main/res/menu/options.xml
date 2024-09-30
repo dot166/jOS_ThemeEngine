@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- "Config", must appear as action button if possible. -->
+    <item
+        android:id="@+id/options"
+        android:icon="@mipmap/settings"
+        android:title="@string/settings_name"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/app_bar_switch"
+        app:actionLayout="@layout/switch_item"
+        app:showAsAction="always"
+        tools:ignore="MenuTitle" />
+
+</menu>

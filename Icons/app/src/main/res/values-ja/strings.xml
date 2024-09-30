@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">テーマエンジンのアイコン</string>
-    <string name="app_name_short">jOS アイコン</string>
-    <string name="fallback_icons">フォールバックアイコンを非表示にする</string>
-    <string name="icon_list">アイコン一覧</string>
-</resources>
