@@ -20,4 +20,7 @@
         <item>M2 Dark</item>
         <item>M2 Light</item>
     </string-array>
+    <string name="fallback_icons">フォールバックアイコンを非表示にする</string>
+    <string name="icon_list">アイコン一覧</string>
+    <string name="show_on_launcher">ランチャーに表示</string>
 </resources>

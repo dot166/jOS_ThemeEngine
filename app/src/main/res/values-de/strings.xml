@@ -20,4 +20,7 @@
         <item>M2 Dark</item>
         <item>M2 Light</item>
     </string-array>
+    <string name="fallback_icons">Ausblenden von Fallback-Symbolen</string>
+    <string name="icon_list">Symbolliste</string>
+    <string name="show_on_launcher">Auf Launcher anzeigen</string>
 </resources>

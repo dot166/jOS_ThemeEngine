@@ -20,7 +20,6 @@
         <item>M2 Dark</item>
         <item>M2 Light</item>
     </string-array>
-    <string name="Icons_name">jOS Icons</string>
     <string name="fallback_icons">hide fallback icons</string>
     <string name="icon_list">icon list</string>
     <string name="show_on_launcher">Show on Launcher</string>
