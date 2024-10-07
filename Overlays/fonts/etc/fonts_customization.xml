@@ -21,4 +21,12 @@
     </family>
     <alias name="rubik-medium" to="rubik" weight="500" />
     <alias name="rubik-bold" to="rubik" weight="700" />
+
+    <family customizationType="new-named-family" name="comicsans">
+        <font weight="400" style="normal">comicsans-Regular.ttf</font>
+        <font weight="400" style="italic">comicsans-Italic.ttf</font>
+        <font weight="700" style="normal">comicsans-Bold.ttf</font>
+        <font weight="700" style="italic">comicsans-BoldItalic.ttf</font>
+    </family>
+    <alias name="comicsans-bold" to="comicsans" weight="700" />
 </fonts-modification>
