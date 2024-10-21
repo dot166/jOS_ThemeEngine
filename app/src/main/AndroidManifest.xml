@@ -24,7 +24,7 @@
                 <action android:name="com.gau.go.launcherex.theme" />
                 <action android:name="org.adw.launcher.THEMES" />
                 <action android:name="org.adw.launcher.icons.ACTION_PICK_ICON" />
-                <action android:name="com.j.jOSLauncher3.THEME_ICONPACK" />
+                <action android:name="com.j.jOSlauncher3.THEME_ICONPACK" />
 
                 <category android:name="android.intent.category.DEFAULT" />
 
