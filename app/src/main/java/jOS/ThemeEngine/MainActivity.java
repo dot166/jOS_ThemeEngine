@@ -1,65 +1,38 @@
 package jOS.ThemeEngine;
 
-import jOS.Core.jActivity;
-import jOS.Core.utils.ErrorUtils;
-import jOS.Core.utils.IconUtils;
+import static jOS.Core.ThemeEngine.ThemeEngine.getAllThemes;
 
-import android.app.Activity;
-import android.content.ComponentName;
-import android.content.Context;
+import jOS.Core.jActivity;
+
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.content.pm.ApplicationInfo;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.CheckBox;
-import android.widget.CompoundButton;
-
-import androidx.appcompat.content.res.AppCompatResources;
-
-import java.util.ArrayList;
-import java.util.Objects;
+import android.view.View;
+import android.widget.TextView;
 
 
 public class MainActivity extends jActivity {
-
-    public static CheckBox mSwitchHideFallback;
-    static SharedPreferences preferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         configure(R.layout.activity_main, false);
         super.onCreate(savedInstanceState);
-        preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        findViewById(R.id.loadButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView resultView= (TextView) findViewById(R.id.res);
+
+                resultView.setText(getAllThemes((jActivity) v.getContext()));
+            }
+        });
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = this.getMenuInflater();
-        Activity context = this;
         inflater.inflate(R.menu.options, menu);
-        IconUtils.HideFallback = preferences.getBoolean("hideFallback", true);
-        mSwitchHideFallback = Objects.requireNonNull(menu.findItem(R.id.app_bar_switch).getActionView()).findViewById(R.id.switchAB);
-        mSwitchHideFallback.setChecked(IconUtils.HideFallback);
-        mSwitchHideFallback.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                IconUtils.HideFallback = b;
-                preferences.edit().putBoolean("hideFallback", b).apply();
-                try {
-                    ArrayList<IconUtils.Icon> icons = IconUtils.ParseIconPack(context, "jOS.ThemeEngine", getResources());
-                    icons.add(new IconUtils.Icon(AppCompatResources.getDrawable(context, jOS.Core.R.drawable.ic_launcher_j), getComponentName()));
-                    IconsListFragment.iconListRecyclerAdapter.setIcons(icons);
-                } catch (Exception e) {
-                    ErrorUtils.handle(e, context);
-                }
-            }
-        });
         return super.onCreateOptionsMenu(menu);
     }
 

@@ -7,20 +7,17 @@
     <string name="config_fragment_name" translatable="false">jOS.ThemeEngine.ConfigActivity$jThemeEngineConfigFragment</string>
     <string name="loadButtonText">Load Data</string>
     <string-array name="themes">
-        <item>Holo</item>
+        <item>jOS Default Theme</item>
         <item>Material You (M3) (Dark)</item>
         <item>Material You (M3) (Light)</item>
         <item>Material (M2) (Dark)</item>
         <item>Material (M2) (Light)</item>
     </string-array>
     <string-array name="themesConfig" translatable="false">
-        <item>Holo</item>
+        <item>jOS</item>
         <item>M3 Dark</item>
         <item>M3 Light</item>
         <item>M2 Dark</item>
         <item>M2 Light</item>
     </string-array>
-    <string name="fallback_icons">hide fallback icons</string>
-    <string name="icon_list">icon list</string>
-    <string name="show_on_launcher">Show on Launcher</string>
 </resources>

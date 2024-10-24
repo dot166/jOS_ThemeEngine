@@ -10,7 +10,7 @@
         android:title="@string/theme_settings"
         android:key="pref_theme"
         android:summary="@string/global_theme_settings"
-        android:defaultValue="Holo"
+        android:defaultValue="jOS"
         android:entries="@array/themes"
         android:entryValues="@array/themesConfig" />
 

@@ -89,7 +89,7 @@ public class database extends ContentProvider {
             for (int i = getContext().getResources().getStringArray(R.array.themesConfig).length - 1; i >= 0; i--) {
                 String themeName = (String) Array.get(getContext().getResources().getStringArray(R.array.themesConfig), i);
                 SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getContext());
-                String themeNamePrefs = prefs.getString(KEY_THEME, "Holo");
+                String themeNamePrefs = prefs.getString(KEY_THEME, "jOS");
                 currentValue = check_if_enabled(getContext(), themeName, themeNamePrefs);
 
                 // fetching text from user
@@ -214,7 +214,7 @@ public class database extends ContentProvider {
             for (int i = mContext.getResources().getStringArray(R.array.themesConfig).length - 1; i >= 0; i--) {
                 String themeName = (String) Array.get(mContext.getResources().getStringArray(R.array.themesConfig), i);
                 SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(mContext);
-                String themeNamePrefs = prefs.getString(KEY_THEME, "default");
+                String themeNamePrefs = prefs.getString(KEY_THEME, "jOS");
                 currentValue = check_if_enabled(mContext, themeName, themeNamePrefs);
 
                 // fetching text from user
