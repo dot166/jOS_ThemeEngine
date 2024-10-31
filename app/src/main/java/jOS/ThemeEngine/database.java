@@ -83,7 +83,7 @@ public class database extends ContentProvider {
     @Override
     public Cursor query(Uri uri, String[] projection, String selection,
                         String[] selectionArgs, String sortOrder) {
-        if (!Objects.equals(currentTheme, PreferenceManager.getDefaultSharedPreferences(getContext()).getString(KEY_THEME, "default"))) {
+        if (!Objects.equals(currentTheme, PreferenceManager.getDefaultSharedPreferences(getContext()).getString(KEY_THEME, "jOS"))) {
             ContentValues values = new ContentValues();
 
             for (int i = getContext().getResources().getStringArray(R.array.themesConfig).length - 1; i >= 0; i--) {
@@ -106,6 +106,22 @@ public class database extends ContentProvider {
                 String[] whereArgs = new String[] {themeName};
                 db.update(TABLE_NAME, values, where, whereArgs);
             }
+            SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getContext());
+            boolean themeEnabledPrefs = prefs.getBoolean(KEY_THEMEENGINEENABLED, true);
+
+            // fetching text from user
+            values.put(database.name, "Disabled");
+
+            // fetching text from user
+            values.put(database.current, String.valueOf(!themeEnabledPrefs));
+
+            // print values to log
+            Log.i("Database Update", String.valueOf(values));
+
+            // inserting into database through content URI
+            String where = "name=?";
+            String[] whereArgs = new String[] {"Disabled"};
+            db.update(TABLE_NAME, values, where, whereArgs);
         }
         SQLiteQueryBuilder qb = new SQLiteQueryBuilder();
         qb.setTables(TABLE_NAME);
@@ -184,7 +200,7 @@ public class database extends ContentProvider {
     static final String TABLE_NAME = "themes";
 
     // declaring version of the database
-    static final int DATABASE_VERSION = 2;
+    static final int DATABASE_VERSION = 4;
 
     // sql query to create the table
     static final String CREATE_DB_TABLE = " CREATE TABLE " + TABLE_NAME
@@ -221,7 +237,7 @@ public class database extends ContentProvider {
                 values.put(database.name, themeName);
 
                 // fetching text from user
-                values.put(database.current, currentValue);
+                values.put(database.current, currentValue.toString());
 
                 // print values to log
                 Log.i("Database init", String.valueOf(values));
@@ -229,6 +245,20 @@ public class database extends ContentProvider {
                 // inserting into database through content URI
                 db.insert(TABLE_NAME, "", values);
             }
+            SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(mContext);
+            boolean themeEnabledPrefs = prefs.getBoolean(KEY_THEMEENGINEENABLED, true);
+
+            // fetching text from user
+            values.put(database.name, "Disabled");
+
+            // fetching text from user
+            values.put(database.current, String.valueOf(!themeEnabledPrefs));
+
+            // print values to log
+            Log.i("Database init", String.valueOf(values));
+
+            // inserting into database through content URI
+            db.insert(TABLE_NAME, "", values);
         }
 
         @Override
