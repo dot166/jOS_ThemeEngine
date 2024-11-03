@@ -4,7 +4,6 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 
-import androidx.annotation.Nullable;
 import androidx.preference.PreferenceManager;
 
 import jOS.Core.ActionBar2;
@@ -12,8 +11,8 @@ import jOS.Core.jConfigActivity;
 
 public class ConfigActivity extends jConfigActivity {
     @Override
-    public int preferenceFragmentValue() {
-        return R.string.config_fragment_name;
+    public jLIBSettingsFragment preferenceFragment() {
+        return new jThemeEngineConfigFragment();
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +21,7 @@ public class ConfigActivity extends jConfigActivity {
         actionBar2.setTitleCentered(true);
     }
 
-    public static class jThemeEngineConfigFragment extends LauncherSettingsFragment implements SharedPreferences.OnSharedPreferenceChangeListener {
+    public static class jThemeEngineConfigFragment extends jLIBSettingsFragment implements SharedPreferences.OnSharedPreferenceChangeListener {
         @Override
         public boolean isLIBConfig() {
             return true;
