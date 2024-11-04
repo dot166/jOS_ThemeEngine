@@ -17,4 +17,7 @@
         <item>M2 Dark</item>
         <item>M2 Light</item>
     </string-array>
+
+    <!-- DO NOT TRANSLATE Empty summary for dynamic preferences -->
+    <string name="summary_empty" translatable="false" />
 </resources>
