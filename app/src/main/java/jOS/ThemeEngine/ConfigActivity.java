@@ -23,7 +23,7 @@ public class ConfigActivity extends jConfigActivity {
 
     public static class jThemeEngineConfigFragment extends jLIBSettingsFragment implements SharedPreferences.OnSharedPreferenceChangeListener {
         @Override
-        public boolean isLIBConfig() {
+        public boolean isTEConfig() {
             return true;
         }
         @Override
