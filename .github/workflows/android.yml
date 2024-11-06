@@ -2,9 +2,9 @@ name: Android CI
 
 on:
   push:
-    branches: [ "jOS-15.0" ]
+    branches: [ "jOS-15.1" ]
   pull_request:
-    branches: [ "jOS-15.0" ]
+    branches: [ "jOS-15.1" ]
 
 jobs:
   build:
