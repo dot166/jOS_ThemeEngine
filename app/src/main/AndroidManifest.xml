@@ -37,7 +37,6 @@
             <meta-data
                 android:name="com.android.settings.summary"
                 android:resource="@string/summary_empty" />
-            </intent-filter>
         </activity>
 
         <provider
