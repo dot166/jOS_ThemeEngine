@@ -14,11 +14,6 @@ android_app {
     manifest: "src/main/AndroidManifest.xml",
 
     static_libs: [
-        // DO NOT EDIT THIS SECTION MANUALLY
-        "androidx-constraintlayout_constraintlayout",
-        "androidx.preference_preference",
-        "com.google.android.material_material",
-        "androidx.swiperefreshlayout_swiperefreshlayout",
         "j.Lib",
     ],
 
