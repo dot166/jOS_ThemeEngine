@@ -27,10 +27,7 @@
                 android:value="com.android.settings.category.ia.system" />
             <meta-data
                 android:name="com.android.settings.icon"
-                android:resource="@mipmap/ic_launcher" />
-            <meta-data
-                android:name="com.android.settings.icon_tintable"
-                android:value="false" />
+                android:resource="@mipmap/ic_launcher_monochrome" />
             <meta-data
                 android:name="com.android.settings.order"
                 android:value="-254" />
