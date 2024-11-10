@@ -27,7 +27,10 @@
                 android:value="com.android.settings.category.ia.system" />
             <meta-data
                 android:name="com.android.settings.icon"
-                android:resource="@mipmap/ic_launcher_monochrome" />
+                android:resource="@drawable/settings_icon" />
+            <meta-data
+                android:name="com.android.settings.icon_tintable"
+                android:value="true" />
             <meta-data
                 android:name="com.android.settings.order"
                 android:value="-254" />
@@ -35,6 +38,25 @@
                 android:name="com.android.settings.summary"
                 android:resource="@string/summary_empty" />
         </activity>
+
+        <activity android:name=".LauncherActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:icon="@mipmap/ic_launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".TEBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_INITIALIZE" />
+            </intent-filter>
+        </receiver>
 
         <provider
             android:name="jOS.ThemeEngine.database"
