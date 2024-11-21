@@ -20,4 +20,8 @@
 
     <!-- DO NOT TRANSLATE Empty summary for dynamic preferences -->
     <string name="summary_empty" translatable="false" />
+    <!-- Option to show launcher icon. -->
+    <string name="show_launcher_icon">Show app icon</string>
+    <!-- Description for the option to the application icon of this app in the launcher. -->
+    <string name="show_launcher_icon_summary">Display application icon in the launcher</string>
 </resources>

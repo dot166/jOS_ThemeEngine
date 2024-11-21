@@ -1,6 +1,8 @@
 package jOS.ThemeEngine;
 
 import static jOS.Core.ThemeEngine.ThemeEngine.currentTheme;
+import static jOS.ThemeEngine.ConfigActivity.jThemeEngineConfig.PREF_THEME;
+import static jOS.ThemeEngine.ConfigActivity.jThemeEngineConfig.PREF_THEME_ENGINE_ENABLED;
 
 import android.content.ContentProvider;
 import android.content.ContentUris;
@@ -23,8 +25,6 @@ import java.util.HashMap;
 import java.util.Objects;
 
 public class database extends ContentProvider {
-    private static final String KEY_THEME = "pref_theme";
-    private static final String KEY_THEMEENGINEENABLED = "pref_enablethemeengine";
 
     public database() {
     }
@@ -83,13 +83,13 @@ public class database extends ContentProvider {
     @Override
     public Cursor query(Uri uri, String[] projection, String selection,
                         String[] selectionArgs, String sortOrder) {
-        if (!Objects.equals(currentTheme, PreferenceManager.getDefaultSharedPreferences(getContext()).getString(KEY_THEME, "jOS"))) {
+        if (!Objects.equals(currentTheme, PreferenceManager.getDefaultSharedPreferences(getContext()).getString(PREF_THEME, "jOS"))) {
             ContentValues values = new ContentValues();
 
             for (int i = getContext().getResources().getStringArray(R.array.themesConfig).length - 1; i >= 0; i--) {
                 String themeName = (String) Array.get(getContext().getResources().getStringArray(R.array.themesConfig), i);
                 SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getContext());
-                String themeNamePrefs = prefs.getString(KEY_THEME, "jOS");
+                String themeNamePrefs = prefs.getString(PREF_THEME, "jOS");
                 currentValue = check_if_enabled(getContext(), themeName, themeNamePrefs);
 
                 // fetching text from user
@@ -107,7 +107,7 @@ public class database extends ContentProvider {
                 db.update(TABLE_NAME, values, where, whereArgs);
             }
             SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getContext());
-            boolean themeEnabledPrefs = prefs.getBoolean(KEY_THEMEENGINEENABLED, true);
+            boolean themeEnabledPrefs = prefs.getBoolean(PREF_THEME_ENGINE_ENABLED, true);
 
             // fetching text from user
             values.put(database.name, "Disabled");
@@ -142,7 +142,7 @@ public class database extends ContentProvider {
     }
 
     private static Boolean check_if_enabled(Context context, String themeName, String themeNamePrefs) {
-        if (!PreferenceManager.getDefaultSharedPreferences(context).getBoolean(KEY_THEMEENGINEENABLED, true)) {
+        if (!PreferenceManager.getDefaultSharedPreferences(context).getBoolean(PREF_THEME_ENGINE_ENABLED, true)) {
             return false;
         }
         return themeName.equals(themeNamePrefs);
@@ -230,7 +230,7 @@ public class database extends ContentProvider {
             for (int i = mContext.getResources().getStringArray(R.array.themesConfig).length - 1; i >= 0; i--) {
                 String themeName = (String) Array.get(mContext.getResources().getStringArray(R.array.themesConfig), i);
                 SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(mContext);
-                String themeNamePrefs = prefs.getString(KEY_THEME, "jOS");
+                String themeNamePrefs = prefs.getString(PREF_THEME, "jOS");
                 currentValue = check_if_enabled(mContext, themeName, themeNamePrefs);
 
                 // fetching text from user
@@ -246,7 +246,7 @@ public class database extends ContentProvider {
                 db.insert(TABLE_NAME, "", values);
             }
             SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(mContext);
-            boolean themeEnabledPrefs = prefs.getBoolean(KEY_THEMEENGINEENABLED, true);
+            boolean themeEnabledPrefs = prefs.getBoolean(PREF_THEME_ENGINE_ENABLED, true);
 
             // fetching text from user
             values.put(database.name, "Disabled");

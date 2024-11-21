@@ -3,7 +3,7 @@
 
     <SwitchPreference
         android:title="@string/enable_themeengine"
-        android:key="pref_enablethemeengine"
+        android:key="pref_enableThemeEngine"
         android:defaultValue="true"/>
 
     <ListPreference
@@ -13,5 +13,11 @@
         android:defaultValue="jOS"
         android:entries="@array/themes"
         android:entryValues="@array/themesConfig" />
+
+    <SwitchPreference
+        android:title="@string/show_launcher_icon"
+        android:summary="@string/show_launcher_icon_summary"
+        android:persistent="true"
+        android:key="pref_showAppIcon"/>
 
 </androidx.preference.PreferenceScreen>
