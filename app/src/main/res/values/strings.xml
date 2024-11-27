@@ -6,22 +6,24 @@
     <string-array name="themes">
         <item>jOS Default Theme</item>
         <item>Material You (M3) (Dark)</item>
+        <item>Material You (M3) (Match System)</item>
         <item>Material You (M3) (Light)</item>
         <item>Material (M2) (Dark)</item>
+        <item>Material (M2) (Match System)</item>
         <item>Material (M2) (Light)</item>
     </string-array>
     <string-array name="themesConfig" translatable="false">
         <item>jOS</item>
         <item>M3 Dark</item>
+        <item>M3</item>
         <item>M3 Light</item>
         <item>M2 Dark</item>
+        <item>M2</item>
         <item>M2 Light</item>
     </string-array>
 
     <!-- DO NOT TRANSLATE Empty summary for dynamic preferences -->
     <string name="summary_empty" translatable="false" />
-    <!-- Option to show launcher icon. -->
-    <string name="show_launcher_icon">Show app icon</string>
-    <!-- Description for the option to the application icon of this app in the launcher. -->
-    <string name="show_launcher_icon_summary">Display application icon in the launcher</string>
+    <string name="darkMode_settings">Theme Type</string>
+    <string name="global_darkMode_settings">Select whether the theme is dark or not</string>
 </resources>
