@@ -25,7 +25,6 @@ public class ConfigActivity extends jConfigActivity {
 
     public static class jThemeEngineConfig {
 
-        public static final String PREF_DARK_THEME = "pref_darkThemeEnabled";
         public static final String PREF_THEME = "pref_theme";
         public static final String PREF_THEME_ENGINE_ENABLED = "pref_enableThemeEngine";
     }
@@ -49,7 +48,6 @@ public class ConfigActivity extends jConfigActivity {
         public void onSharedPreferenceChanged(SharedPreferences prefs, String key) {
             switch (Objects.requireNonNull(key)) {
                 case jThemeEngineConfig.PREF_THEME_ENGINE_ENABLED:
-                case jThemeEngineConfig.PREF_DARK_THEME:
                 case jThemeEngineConfig.PREF_THEME:
                     Handler handler = new Handler();
                     handler.postDelayed(this::recreateActivityNow, 2000);

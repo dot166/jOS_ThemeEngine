@@ -1,7 +1,6 @@
 package jOS.ThemeEngine;
 
 import static jOS.Core.ThemeEngine.ThemeEngine.currentTheme;
-import static jOS.ThemeEngine.ConfigActivity.jThemeEngineConfig.PREF_DARK_THEME;
 import static jOS.ThemeEngine.ConfigActivity.jThemeEngineConfig.PREF_THEME;
 import static jOS.ThemeEngine.ConfigActivity.jThemeEngineConfig.PREF_THEME_ENGINE_ENABLED;
 
@@ -42,7 +41,6 @@ public class database extends ContentProvider {
     static final String id = "id";
     static final String name = "name";
     static final String current = "current";
-    static final String dark = "dark";
     static final int uriCode = 1;
     static final UriMatcher uriMatcher;
     public static Context mContext;
