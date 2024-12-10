@@ -200,7 +200,7 @@ public class database extends ContentProvider {
     static final String TABLE_NAME = "themes";
 
     // declaring version of the database
-    static final int DATABASE_VERSION = 5;
+    static final int DATABASE_VERSION = 6;
 
     // sql query to create the table
     static final String CREATE_DB_TABLE = " CREATE TABLE " + TABLE_NAME

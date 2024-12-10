@@ -18,4 +18,5 @@ android_app {
     ],
 
     kotlincflags: ["-Xjvm-default=all"],
+    aaptflags: ["--auto-add-overlay"],
 }

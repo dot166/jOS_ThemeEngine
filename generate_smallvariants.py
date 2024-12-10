@@ -5,7 +5,7 @@ from PIL import Image
 
 path = os.path.dirname(os.path.realpath(__file__))
 
-resources = ["res/drawable-nodpi"]
+resources = ["app/src/main/res/drawable-nodpi"]
 
 def generate_smallvariants(resource):
     global path

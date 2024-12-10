@@ -18,4 +18,10 @@
 
     <!-- DO NOT TRANSLATE Empty summary for dynamic preferences -->
     <string name="summary_empty" translatable="false" />
+
+    <!-- AOSP Customization Things -->
+    <array name="partner_wallpapers">
+        <item>lock01</item>
+        <item>nexus_chroma</item>
+    </array>
 </resources>
