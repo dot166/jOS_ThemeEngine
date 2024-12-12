@@ -24,5 +24,5 @@ android {
 }
 
 dependencies {
-    implementation("io.github.dot166:j-Lib:3.3.2")
+    implementation("io.github.dot166:j-Lib:3.3.4")
 }
