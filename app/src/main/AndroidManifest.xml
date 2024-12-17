@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="jOS.ThemeEngine"
-    android:versionCode="6"
-    android:versionName="3.0" >
+    package="io.github.dot166.ThemeEngine"
+    android:versionCode="7"
+    android:versionName="4.0" >
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
@@ -19,7 +19,7 @@
             android:label="@string/app_name"
             tools:ignore="RedundantLabel">
             <intent-filter>
-                <action android:name="jOS.ThemeEngine.CONFIG" />
+                <action android:name="io.github.dot166.ThemeEngine.CONFIG" />
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
 
                 <category android:name="android.intent.category.DEFAULT" />
@@ -65,8 +65,8 @@
         </receiver>
 
         <provider
-            android:name="jOS.ThemeEngine.database"
-            android:authorities="jOS.Core.ThemeEngine.database"
+            android:name=".database"
+            android:authorities="io.github.dot166.ThemeEngine.database"
             android:enabled="true"
             android:exported="true"
             tools:ignore="ExportedContentProvider" />

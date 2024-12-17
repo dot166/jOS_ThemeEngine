@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2024 ._______166
  */
-package jOS.ThemeEngine;
+package io.github.dot166.ThemeEngine;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.BroadcastReceiver;

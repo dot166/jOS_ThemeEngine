@@ -1,4 +1,4 @@
-package jOS.ThemeEngine;
+package io.github.dot166.ThemeEngine;
 
 import android.app.Activity;
 import android.content.Intent;

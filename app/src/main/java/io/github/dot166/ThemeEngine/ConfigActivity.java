@@ -1,4 +1,4 @@
-package jOS.ThemeEngine;
+package io.github.dot166.ThemeEngine;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;

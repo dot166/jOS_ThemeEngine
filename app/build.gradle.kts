@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "jOS.ThemeEngine"
+    namespace = "io.github.dot166.ThemeEngine"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "jOS.ThemeEngine"
+        applicationId = "io.github.dot166.ThemeEngine"
         minSdk = 24
         targetSdk = 35
     }
