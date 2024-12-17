@@ -2,7 +2,7 @@ package io.github.dot166.ThemeEngine;
 
 import static io.github.dot166.ThemeEngine.ConfigActivity.jThemeEngineConfig.PREF_THEME;
 import static io.github.dot166.ThemeEngine.ConfigActivity.jThemeEngineConfig.PREF_THEME_ENGINE_ENABLED;
-import static jOS.Core.ThemeEngine.ThemeEngine.currentTheme;
+import static io.github.dot166.jLib.ThemeEngine.ThemeEngine.currentTheme;
 
 import android.content.ContentProvider;
 import android.content.ContentUris;

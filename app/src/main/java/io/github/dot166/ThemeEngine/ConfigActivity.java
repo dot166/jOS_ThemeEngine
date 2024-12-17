@@ -8,8 +8,8 @@ import androidx.preference.PreferenceManager;
 
 import java.util.Objects;
 
-import jOS.Core.ActionBar2;
-import jOS.Core.jConfigActivity;
+import io.github.dot166.jLib.ActionBar2;
+import io.github.dot166.jLib.jConfigActivity;
 
 public class ConfigActivity extends jConfigActivity {
     @Override
@@ -19,7 +19,7 @@ public class ConfigActivity extends jConfigActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        ActionBar2 actionBar2 = findViewById(jOS.Core.R.id.actionbar);
+        ActionBar2 actionBar2 = findViewById(io.github.dot166.jLib.R.id.actionbar);
         actionBar2.setTitleCentered(true);
     }
 
