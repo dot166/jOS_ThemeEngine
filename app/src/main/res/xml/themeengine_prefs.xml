@@ -10,7 +10,7 @@
         android:title="@string/theme_settings"
         android:key="pref_theme"
         android:summary="@string/global_theme_settings"
-        android:defaultValue="jOS"
+        android:defaultValue="jLib"
         android:entries="@array/themes"
         android:entryValues="@array/themesConfig" />
 

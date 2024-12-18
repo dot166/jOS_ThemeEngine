@@ -83,13 +83,13 @@ public class database extends ContentProvider {
     @Override
     public Cursor query(Uri uri, String[] projection, String selection,
                         String[] selectionArgs, String sortOrder) {
-        if (!Objects.equals(currentTheme, PreferenceManager.getDefaultSharedPreferences(getContext()).getString(PREF_THEME, "jOS"))) {
+        if (!Objects.equals(currentTheme, PreferenceManager.getDefaultSharedPreferences(getContext()).getString(PREF_THEME, "jLib"))) {
             ContentValues values = new ContentValues();
 
             for (int i = getContext().getResources().getStringArray(R.array.themesConfig).length - 1; i >= 0; i--) {
                 String themeName = (String) Array.get(getContext().getResources().getStringArray(R.array.themesConfig), i);
                 SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getContext());
-                String themeNamePrefs = prefs.getString(PREF_THEME, "jOS");
+                String themeNamePrefs = prefs.getString(PREF_THEME, "jLib");
                 currentValue = check_if_enabled(getContext(), themeName, themeNamePrefs);
 
                 // fetching text from user
@@ -230,7 +230,7 @@ public class database extends ContentProvider {
             for (int i = mContext.getResources().getStringArray(R.array.themesConfig).length - 1; i >= 0; i--) {
                 String themeName = (String) Array.get(mContext.getResources().getStringArray(R.array.themesConfig), i);
                 SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(mContext);
-                String themeNamePrefs = prefs.getString(PREF_THEME, "jOS");
+                String themeNamePrefs = prefs.getString(PREF_THEME, "jLib");
                 currentValue = check_if_enabled(mContext, themeName, themeNamePrefs);
 
                 // fetching text from user
