@@ -8,8 +8,8 @@ import androidx.preference.PreferenceManager;
 
 import java.util.Objects;
 
-import io.github.dot166.jLib.ActionBar2;
-import io.github.dot166.jLib.jConfigActivity;
+import io.github.dot166.jLib.widget.ActionBar2;
+import io.github.dot166.jLib.app.jConfigActivity;
 
 public class ConfigActivity extends jConfigActivity {
     @Override
