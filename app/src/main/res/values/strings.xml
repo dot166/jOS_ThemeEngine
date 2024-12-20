@@ -5,15 +5,11 @@
     <string name="global_theme_settings">Global Theme Settings</string>
     <string-array name="themes">
         <item>jLib Default Theme</item>
-        <item>Material You (M3) (Dark)</item>
-        <item>Material You (M3) (Match System)</item>
-        <item>Material You (M3) (Light)</item>
+        <item>Material You (M3)</item>
     </string-array>
     <string-array name="themesConfig" translatable="false">
         <item>jLib</item>
-        <item>M3 Dark</item>
         <item>M3</item>
-        <item>M3 Light</item>
     </string-array>
 
     <!-- DO NOT TRANSLATE Empty summary for dynamic preferences -->
