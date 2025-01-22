@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="io.github.dot166.ThemeEngine"
-    android:versionCode="7"
-    android:versionName="4.0" >
+    android:versionCode="8"
+    android:versionName="4.1" >
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
@@ -52,6 +52,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".TEAbout"/>
 
         <receiver android:name=".TEBroadcastReceiver"
             android:exported="true"

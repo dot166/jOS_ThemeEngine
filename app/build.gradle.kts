@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("com.mikepenz.aboutlibraries.plugin")
 }
 
 android {
@@ -9,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId = "io.github.dot166.ThemeEngine"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 35
     }
 
@@ -30,6 +31,11 @@ android {
     }
 }
 
+aboutLibraries {
+    // Required to be set to true
+    registerAndroidTasks = true
+}
+
 dependencies {
-    implementation("io.github.dot166:j-Lib:4.0.0")
+    implementation("io.github.dot166:j-Lib:4.0.1")
 }

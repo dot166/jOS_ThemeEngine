@@ -1,13 +1,17 @@
 package io.github.dot166.ThemeEngine;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 
+import androidx.annotation.NonNull;
+import androidx.preference.Preference;
 import androidx.preference.PreferenceManager;
 
 import java.util.Objects;
 
+import io.github.dot166.jLib.LIBAboutActivity;
 import io.github.dot166.jLib.widget.ActionBar2;
 import io.github.dot166.jLib.app.jConfigActivity;
 
@@ -52,6 +56,23 @@ public class ConfigActivity extends jConfigActivity {
                     Handler handler = new Handler();
                     handler.postDelayed(this::recreateActivityNow, 2000);
                     break;
+            }
+        }
+
+        @Override
+        protected boolean extraPrefs(Preference preference) {
+            switch (preference.getKey()) {
+                case "aboutTE":
+                    preference.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+                        @Override
+                        public boolean onPreferenceClick(@NonNull Preference preference) {
+                            startActivity(new Intent(preference.getContext(), TEAbout.class));
+                            return true;
+                        }
+                    });
+                    return true;
+                default:
+                    return true;
             }
         }
     }

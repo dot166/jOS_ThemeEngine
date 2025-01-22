@@ -14,4 +14,8 @@
         android:entries="@array/themes"
         android:entryValues="@array/themesConfig" />
 
+    <Preference
+        android:title="@string/about"
+        android:key="aboutTE"/>
+
 </androidx.preference.PreferenceScreen>
